@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="sudoku.css">
+    <meta charset="UTF-8">
+    <title>Sudoku</title>
+</head>
+
+<body>
+
+    <div id='header'>
+        <p id='header'>
+            Sudoku
+        </p>
+    </div>
+
+    <div class="btn-group-toggle" data-toggle="buttons">
+        <label class="btn btn-secondary active">
+            <input id="lightTheme" type="checkbox" checked autocomplete="off"> Light theme
+        </label>
+    </div>
+
+    <div class="btn-group-toggle" data-toggle="buttons">
+        <label class="btn btn-secondary active">
+            <input id="darkTheme" type="checkbox" checked autocomplete="off"> Dark theme
+        </label>
+    </div>
+
+    <div id="sudoBoard">
+
+        <div class="container">
+            <div class="row">
+                <div id='A1' contenteditable="true" class="col-sm block">
+
+                </div>
+                <div id='A2' contenteditable="true" class="col-sm block">
+
+                </div>
+                <div id='A3' contenteditable="true" class="col-sm block">
+
+                </div>
+                <div id='A4' contenteditable="true" class="col-sm light">
+
+                </div>
+                <div id='A5' contenteditable="true" class="col-sm light">
+
+                </div>
+                <div id='A6' contenteditable="true" class="col-sm light">
+
+                </div>
+                <div id='A7' contenteditable="true" class="col-sm block">
+
+                </div>
+                <div id='A8' contenteditable="true" class="col-sm block">
+
+                </div>
+                <div id='A9' contenteditable="true" class="col-sm block">
+
+                </div>
+            </div>
+            <div class="row">
+                <div id='B1' contenteditable="true" class="col-sm block">
+
+                </div>
+                <div id='B2' contenteditable="true" class="col-sm block">
+
+                </div>
+                <div id='B3' contenteditable="true" class="col-sm block">
+
+                </div>
+                <div id='B4' contenteditable="true" class="col-sm light">
+
+                </div>
+                <div id='B5' contenteditable="true" class="col-sm light">
+
+                </div>
+                <div id='B6' contenteditable="true" class="col-sm light">
+
+                </div>
+                <div id='B7' contenteditable="true" class="col-sm block">
+
+                </div>
+                <div id='B8' contenteditable="true" class="col-sm block">
+
+                </div>
+                <div id='B9' contenteditable="true" class="col-sm block">
+
+                </div>
+            </div>
+            <div class="row">
+                <div id='C1' contenteditable="true" class="col-sm block">
+
+                </div>
+                <div id='C2' contenteditable="true" class="col-sm block">
+
+                </div>
+                <div id='C3' contenteditable="true" class="col-sm block">
+
+                </div>
+                <div id='C4' contenteditable="true" class="col-sm light">
+
+                </div>
+                <div id='C5' contenteditable="true" class="col-sm light">
+
+                </div>
+                <div id='C6' contenteditable="true" class="col-sm light">
+
+                </div>
+                <div id='C7' contenteditable="true" class="col-sm block">
+
+                </div>
+                <div id='C8' contenteditable="true" class="col-sm block">
+
+                </div>
+                <div id='C9' contenteditable="true" class="col-sm block">
+
+                </div>
+            </div>
+            <div class="row">
+                <div id='D1' contenteditable="true" class="col-sm light">
+
+                </div>
+                <div id='D2' contenteditable="true" class="col-sm light">
+
+                </div>
+                <div id='D3' contenteditable="true" class="col-sm light">
+
+                </div>
+                <div id='D4' contenteditable="true" class="col-sm block">
+
+                </div>
+                <div id='D5' contenteditable="true" class="col-sm block">
+
+                </div>
+                <div id='D6' contenteditable="true" class="col-sm block">
+
+                </div>
+                <div id='D7' contenteditable="true" class="col-sm light">
+
+                </div>
+                <div id='D8' contenteditable="true" class="col-sm light">
+
+                </div>
+                <div id='D9' contenteditable="true" class="col-sm light">
+
+                </div>
+            </div>
+            <div class="row">
+                <div id='E1' contenteditable="true" class="col-sm light">
+
+                </div>
+                <div id='E2' contenteditable="true" class="col-sm light">
+
+                </div>
+                <div id='E3' contenteditable="true" class="col-sm light">
+
+                </div>
+                <div id='E4' contenteditable="true" class="col-sm block">
+
+                </div>
+                <div id='E5' contenteditable="true" class="col-sm block">
+
+                </div>
+                <div id='E6' contenteditable="true" class="col-sm block">
+
+                </div>
+                <div id='E7' contenteditable="true" class="col-sm light">
+
+                </div>
+                <div id='E8' contenteditable="true" class="col-sm light">
+
+                </div>
+                <div id='E9' contenteditable="true" class="col-sm light">
+
+                </div>
+            </div>
+            <div class="row">
+                <div id='F1' contenteditable="true" class="col-sm light">
+
+                </div>
+                <div id='F2' contenteditable="true" class="col-sm light">
+
+                </div>
+                <div id='F3' contenteditable="true" class="col-sm light">
+
+                </div>
+                <div id='F4' contenteditable="true" class="col-sm block">
+
+                </div>
+                <div id='F5' contenteditable="true" class="col-sm block">
+
+                </div>
+                <div id='F6' contenteditable="true" class="col-sm block">
+
+                </div>
+                <div id='F7' contenteditable="true" class="col-sm light">
+
+                </div>
+                <div id='F8' contenteditable="true" class="col-sm light">
+
+                </div>
+                <div id='F9' contenteditable="true" class="col-sm light">
+
+                </div>
+            </div>
+            <div class="row">
+                <div id='G1' contenteditable="true" class="col-sm block">
+
+                </div>
+                <div id='G2' contenteditable="true" class="col-sm block">
+
+                </div>
+                <div id='G3' contenteditable="true" class="col-sm block">
+
+                </div>
+                <div id='G4' contenteditable="true" class="col-sm light">
+
+                </div>
+                <div id='G5' contenteditable="true" class="col-sm light">
+
+                </div>
+                <div id='G6' contenteditable="true" class="col-sm light">
+
+                </div>
+                <div id='G7' contenteditable="true" class="col-sm block">
+
+                </div>
+                <div id='G8' contenteditable="true" class="col-sm block">
+
+                </div>
+                <div id='G9' contenteditable="true" class="col-sm block">
+
+                </div>
+            </div>
+            <div class="row">
+                <div id='H1' contenteditable="true" class="col-sm block">
+
+                </div>
+                <div id='H2' contenteditable="true" class="col-sm block">
+
+                </div>
+                <div id='H3' contenteditable="true" class="col-sm block">
+
+                </div>
+                <div id='H4' contenteditable="true" class="col-sm light">
+
+                </div>
+                <div id='H5' contenteditable="true" class="col-sm light">
+
+                </div>
+                <div id='H6' contenteditable="true" class="col-sm light">
+
+                </div>
+                <div id='H7' contenteditable="true" class="col-sm block">
+
+                </div>
+                <div id='H8' contenteditable="true" class="col-sm block">
+
+                </div>
+                <div id='H9' contenteditable="true" class="col-sm block">
+
+                </div>
+            </div>
+            <div class="row">
+                <div id='I1' contenteditable="true" class="col-sm block">
+
+                </div>
+                <div id='I2' contenteditable="true" class="col-sm block">
+
+                </div>
+                <div id='I3' contenteditable="true" class="col-sm block">
+
+                </div>
+                <div id='I4' contenteditable="true" class="col-sm light">
+
+                </div>
+                <div id='I5' contenteditable="true" class="col-sm light">
+
+                </div>
+                <div id='I6' contenteditable="true" class="col-sm light">
+
+                </div>
+                <div id='I7' contenteditable="true" class="col-sm block">
+
+                </div>
+                <div id='I8' contenteditable="true" class="col-sm block">
+
+                </div>
+                <div id='I9' contenteditable="true" class="col-sm block">
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+</body>
+<script src='./sudoku.js'></script>
+
+</html>

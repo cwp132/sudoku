@@ -1,0 +1,177 @@
+/* #sudoBoard {
+    margin-left: 350px;
+    background-color: black;
+    height: 1000px;
+    width: 1000px;
+} */
+
+body {
+    background-color: black;
+}
+
+html {
+    background-color: Black;
+}
+
+.container{
+    
+    background-color: black;
+    padding-left: 5px;
+    
+}
+
+#header{
+    text-align: center;
+    font-size: 50px;
+    color: 'white';
+}
+
+.col-sm {
+    margin: 10px;
+    padding: 10px;
+    height: 60px;
+    width: 20px;
+    background-color: white;
+    text-align: center;
+    font-size: 28px;
+}
+
+#A1 {
+    background-color: gray;
+}
+#A2 {
+    background-color: gray;
+}
+#A3 {
+    background-color: gray;
+}
+#B1 {
+    background-color: gray;
+}
+#B2 {
+    background-color: gray;
+}
+#B3 {
+    background-color: gray;
+}
+#C1 {
+    background-color: gray;
+}
+#C2 {
+    background-color: gray;
+}
+#C3 {
+    background-color: gray;
+}
+
+#A7 {
+    background-color: gray;
+}
+#A8 {
+    background-color: gray;
+}
+#A9 {
+    background-color: gray;
+}
+#B7 {
+    background-color: gray;
+}
+#B8 {
+    background-color: gray;
+}
+#B9 {
+    background-color: gray;
+}
+#C7 {
+    background-color: gray;
+}
+#C8 {
+    background-color: gray;
+}
+#C9 {
+    background-color: gray;
+}
+
+#G1 {
+    background-color: gray;
+}
+#G2 {
+  background-color: gray;
+}
+#G3 {
+    background-color: gray;
+}
+#H1 {
+    background-color: gray;
+}
+#H2 {
+    background-color: gray;
+}
+#H3 {
+    background-color: gray;
+}
+#I1 {
+    background-color: gray;
+}
+#I2 {
+    background-color: gray;
+}
+#I3 {
+    background-color: gray;
+}
+
+#G7 {
+    background-color: gray;
+}
+#G8 {
+    background-color: gray;
+}
+#G9 {
+    background-color: gray;
+}
+#H7 {
+    background-color: gray;
+}
+#H8 {
+    background-color: gray;
+}
+#H9 {
+    background-color: gray;
+}
+#I7 {
+    background-color: gray;
+}
+#I8 {
+    background-color: gray;
+}
+#I9 {
+    background-color: gray;
+}
+
+#D4 {
+    background-color: gray;
+}
+#D5 {
+    background-color: gray;
+}
+#D6 {
+    background-color: gray;
+}
+#E4 {
+    background-color: gray;
+}
+#E5 {
+    background-color: gray;
+}
+#E6 {
+    background-color: gray;
+}
+#F4 {
+    background-color: gray;
+}
+#F5 {
+    background-color: gray;
+}
+#F6 {
+    background-color: gray;
+}
