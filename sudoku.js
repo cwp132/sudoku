@@ -58,7 +58,7 @@ $('#sudoChecker').click(function () {
     for (let g = 0; g < numbersEntered.length; g++) {
         parseInt(numbersEntered[g]);
         if (numbersEntered[g] == sudoSolution[g]) {
-            console.log(true);
+            console.log("Nice");
             return correct = true;
         }
         else {
