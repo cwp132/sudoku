@@ -129,8 +129,8 @@ var sudoNums = {
 var randNum = Math.floor(Math.random() * 51);
 var sudoArr = sudoNums[randNum];
 var sudoSolution = sudoNums[randNum + 'a'];
-var correct;
-var incorrect;
+var correct = 0;
+var incorrect = 0;
 $('#sudoChecker').click(function () {
     var numbersEntered = [$('#A1').text(), $('#A2').text(), $('#A3').text(), $('#A4').text(), $('#A5').text(), $('#A6').text(), $('#A7').text(), $('#A8').text(), $('#A9').text(), $('#B1').text(), $('#B2').text(), $('#B3').text(), $('#B4').text(), $('#B5').text(), $('#B6').text(), $('#B7').text(), $('#B8').text(), $('#B9').text(), $('#C1').text(), $('#C2').text(), $('#C3').text(), $('#C4').text(), $('#C5').text(), $('#C6').text(), $('#C7').text(), $('#C8').text(), $('#C9').text(), $('#D1').text(), $('#D2').text(), $('#D3').text(), $('#D4').text(), $('#D5').text(), $('#D6').text(), $('#D7').text(), $('#D8').text(), $('#D9').text(), $('#E1').text(), $('#E2').text(), $('#E3').text(), $('#E4').text(), $('#E5').text(), $('#E6').text(), $('#E7').text(), $('#E8').text(), $('#E9').text(), $('#F1').text(), $('#F2').text(), $('#F3').text(), $('#F4').text(), $('#F5').text(), $('#F6').text(), $('#F7').text(), $('#F8').text(), $('#F9').text(), $('#G1').text(), $('#G2').text(), $('#G3').text(), $('#G4').text(), $('#G5').text(), $('#G6').text(), $('#G7').text(), $('#G8').text(), $('#G9').text(), $('#H1').text(), $('#H2').text(), $('#H3').text(), $('#H4').text(), $('#H5').text(), $('#H6').text(), $('#H7').text(), $('#H8').text(), $('#H9').text(), $('#I1').text(), $('#I2').text(), $('#I3').text(), $('#I4').text(), $('#I5').text(), $('#I6').text(), $('#I7').text(), $('#I8').text(), $('#I9').text()];
     for (let g = 0; g < numbersEntered.length; g++) {
